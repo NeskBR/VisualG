@@ -2,7 +2,7 @@ Algoritmo "lanchonete"
    
 Var
 
-   cod1, cod2, cod3, cod4, cod5, total, cod, quant : real
+   total, cod, quant : real
    
 Inicio
 
@@ -12,29 +12,24 @@ Inicio
    escreva("Quantidade comprada: ")
    leia(quant)
    
-   se cod = 1 entao
-      cod1 <- 5 * quant
-      escreva("Valor a pagar: ", cod1:8:2)
-   fimse
+   escolha cod
+   caso 1
+   cod <- 5.00 * quant
    
-   se cod = 2 entao
-      cod2 <- 3.50 * quant
-      escreva("Valor a pagar: ", cod2:8:2)
-   fimse
+   caso 2
+   cod <- 3.50 * quant
    
-   se cod = 3 entao
-      cod3 <- 4.80 * quant
-      escreva("Valor a pagar: ", cod3:8:2)
-   fimse
+   caso 3
+   cod <- 4.80 * quant
    
-   se cod = 4 entao
-      cod4 <- 8.90 * quant
-      escreva("Valor a pagar: ", cod4:8:2)
-   fimse
+   caso 4
+   cod <- 8.90 * quant
    
-   se cod = 5 entao
-      cod5 <- 7.32 * quant
-      escreva("Valor a pagar: ", cod5:8:2)
-   fimse
+   caso 5
+   cod <- 7.32 * quant
+   
+   fimescolha
+   
+   escreva("Valor a pagar: R$", cod:8:2)
 
 Fimalgoritmo
